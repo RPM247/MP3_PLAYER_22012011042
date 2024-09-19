@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Service", "Play")
             startService(intent)
         }
-
         binding.pause.setOnClickListener {
             val intent = Intent(this, MyService::class.java)
             intent.putExtra("Service", "Pause")
